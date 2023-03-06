@@ -1,0 +1,42 @@
+<div class="navbar-area droid-arabic-kufi" ngStickyNav stickyClass="sticky-box-shadow" ngStickyNav>
+    <div class="container">
+        <nav lang="ar" dir="rtl" class="navbar navbar-expand-lg navbar-light bg-light" [class.active]="classApplied">
+            <a  class="navbar-brand pos" routerLink="/"><img src="assets/img/logo3.png" width="128" height="41" alt="logo"></a>
+            <button class="navbar-toggler" type="button" (click)="toggleClass()">
+                <span class="burger-menu">
+                    <span class="top-bar"></span>
+                    <span class="middle-bar"></span>
+                    <span class="bottom-bar"></span>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="javascript:void(0)"  routerLink="/" class="nav-link active">الصفحة الرئيسية</a>
+                  
+                     </li>
+                     <li class="nav-item"><a routerLink="/about-us" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">عن مغاسل
+                    </a></li>
+                    <li class="nav-item"><a href="javascript:void(0)"  routerLink="/faq"  class=" nav-link">الأسئلة الشائعة
+                    </a>
+                  
+                    </li>
+                    <li class="nav-item"><a href="javascript:void(0)"  routerLink="/terms-conditions-web" class="nav-link">الأحكام والشروط
+                    </a>
+               
+                    </li>
+                    <li class="nav-item"><a class="nav-link"  href="javascript:void(0)" routerLink="/privacy">سياسة ‍ الخصوصية
+                    </a></li>
+                    <li class="nav-item"><a class="nav-link"  href="javascript:void(0)"  routerLink="/contact" >تواصل معنا
+                    </a></li>
+
+                   
+
+            
+                 
+               
+                </ul>
+               
+            </div>
+        </nav>
+    </div>
+</div>

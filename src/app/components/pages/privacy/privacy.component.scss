@@ -1,0 +1,137 @@
+@import url(https://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+.col2{
+    color: #090a2a;
+    margin-top: 15%;
+    margin-bottom: 1%;
+}
+.droid-arabic-kufi{font-family: 'Droid Arabic Kufi', serif;}
+.col{
+    color: #716C80;
+}
+.single-team-box {
+    text-align: center;
+    margin-bottom: 25px;
+
+    .image {
+        width: 120px;
+        height: 120px;
+        overflow: hidden;
+        border-radius: 5px;
+        position: relative;
+        transform: rotate(45deg) translateZ(0px);
+        margin: {
+            top: 25px;
+            left: auto;
+            right: auto;
+            bottom: 25px;
+        };
+        div {
+            top: 50%;
+            left: 50%;
+            width: 170px;
+            height: 170px;
+            position: absolute;
+            transform: rotate(-45deg) translate(0%, -70%);
+            background: {
+                position: center center;
+                repeat: no-repeat;
+                size: cover;
+            };
+            &.bg-1 {
+                background-image: url(../../../../assets/img/team/team1.jpg);
+            }
+            &.bg-2 {
+                background-image: url(../../../../assets/img/team/team2.jpg);
+            }
+            &.bg-3 {
+                background-image: url(../../../../assets/img/team/team3.jpg);
+            }
+            &.bg-4 {
+                background-image: url(../../../../assets/img/team/team4.jpg);
+            }
+            &.bg-5 {
+                background-image: url(../../../../assets/img/team/team5.jpg);
+            }
+            &.bg-6 {
+                background-image: url(../../../../assets/img/team/team6.jpg);
+            }
+            &.bg-7 {
+                background-image: url(../../../../assets/img/team/team7.jpg);
+            }
+            &.bg-8 {
+                background-image: url(../../../../assets/img/team/team8.jpg);
+            }
+            &.bg-9 {
+                background-image: url(../../../../assets/img/team/team9.jpg);
+            }
+            &.bg-10 {
+                background-image: url(../../../../assets/img/team/team10.jpg);
+            }
+            &.bg-11 {
+                background-image: url(../../../../assets/img/team/team11.jpg);
+            }
+        }
+    }
+    .content {
+        margin-top: 45px;
+
+        h3 {
+            margin-bottom: 8px;
+            font-size: 20px;
+        }
+        span {
+            display: block;
+            font-weight: 300;
+            color: var(--paragraphColor);
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+
+    .single-team-box {
+        .image {
+            width: 100px;
+            height: 100px;
+
+            div {
+                width: 135px;
+                height: 135px;
+            }
+        }
+        .content {
+            margin-top: 40px;
+
+            h3 {
+                font-size: 16px;
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .single-team-box {
+        .content {
+            h3 {
+                font-size: 18px;
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1550px */
+@media only screen and (min-width: 1550px) {}

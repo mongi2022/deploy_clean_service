@@ -1,0 +1,115 @@
+@import url(https://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+.col2{
+    color: #090a2a;
+    margin-top: 15%;
+    margin-bottom: 1%;
+}
+    .droid-arabic-kufi{font-family: 'Droid Arabic Kufi', serif;}
+    *{
+        direction:rtl;
+        color:#444;
+      }
+
+.faq-sidebar {
+    padding-right: 15px;
+
+    ul {
+        margin-bottom: 0;
+        list-style-type: none;
+        background-color: #F7F7FF;
+        padding: {
+            left: 0;
+            top: 30px;
+            bottom: 30px;
+        };
+        li {
+            padding: 13px 30px;
+
+            a {
+                font-weight: 600;
+                position: relative;
+                padding-bottom: 2px;
+                display: inline-block;
+
+                &::before {
+                    left: 0;
+                    width: 0;
+                    bottom: 0;
+                    content: '';
+                    height: 1.5px;
+                    position: absolute;
+                    transition: var(--transition);
+                    background-color: var(--mainColor);
+                }
+                &:hover, &.active {
+                    color: var(--mainColor);
+
+                    &::before {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+.faq-accordion {
+    padding-left: 15px;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+
+    .faq-sidebar {
+        padding-right: 0;
+        margin-bottom: 30px;
+
+        ul {
+            padding: {
+                top: 10px;
+                bottom: 10px;
+            };
+            li {
+                padding: 8px 20px;
+            }
+        }
+    }
+    .faq-accordion {
+        padding-left: 0;
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .faq-sidebar {
+        padding-right: 0;
+        margin-bottom: 30px;
+
+        ul {
+            padding: {
+                top: 15px;
+                bottom: 15px;
+            };
+            li {
+                padding: 10px 30px;
+            }
+        }
+    }
+    .faq-accordion {
+        padding-left: 0;
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1550px */
+@media only screen and (min-width: 1550px) {}

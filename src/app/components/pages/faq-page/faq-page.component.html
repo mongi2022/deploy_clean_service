@@ -1,0 +1,119 @@
+<app-navbar-style-one></app-navbar-style-one>
+<div class=" droid-arabic-kufi">
+    <div class="container">
+        <div class="page-title-content">
+            <h2 class="col2">الأسئلة الشائعة
+            </h2>
+
+        </div>
+    </div>
+ 
+</div>
+
+
+<div class="faq-area ptb-100">
+    <div lang="ar" dir="rtl" class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-12">
+                <div class="faq-sidebar">
+                    <ul  >
+                        <li><a (click)="onSelect()" type="submit" class={{class1}}><span>البداية</span></a></li>
+                        <li><a (click)="onSelect2()" type="submit" class={{class2}} ><span>الخدمات والاسعار</span></a></li>
+                        <li><a (click)="onSelect3()" type="submit" class={{class3}}  ><span>اخرى</span></a></li>
+           
+                    </ul>
+                </div>
+            </div>
+            <div *ngIf="show" class="col-lg-8 col-md-12 mt-5">
+                <div class="faq-accordion accordion">
+                    <accordion>
+                        <accordion-group class="droid-arabic-kufi"  heading=" كيف احمل تطبيق مغاسل؟
+                                 ">
+                                 من خلال أبل ستور لأجهزة الآيفون وقوقل بلاي لأجهزة الاندرويد
+                        </accordion-group>
+                        <accordion-group class="droid-arabic-kufi" heading="كيف اعمل طلب استلام الملابس؟
+                        ">
+                        بعد تحميل التطبيق على جوالك. اكمل عملية التسجيل وحدد موقعك. اضغط على ايقونة "ستلام الملابس". سيتم التواصل معك من مندوب التوصيل لتسليمك شنطة مغاسل واستلام ملابسك. "المرة الاولى والاخيرة يتواصل معك احد مندوبينا".
+                        </accordion-group>
+                        <accordion-group class="droid-arabic-kufi" heading="كيف اقدر ألغي الطلب؟
+                        ">
+                        تقدر تلغي الطلب بأي وقت قبل استلام ملابسك من خلال التطبيق    </accordion-group>
+                      
+                      
+                     
+                    </accordion>        
+                </div>
+            </div>
+            <div *ngIf="show2" class="col-lg-8 col-md-12 mt-5">
+                <div class="faq-accordion accordion ">
+                    <accordion>
+                        <accordion-group class="droid-arabic-kufi"  heading="ايش الخدمات الي تقدمها مغاسل؟
+                                 ">
+                                 غسيل وكوي، كوي فقط، الغسيل الجاف
+                                  
+                                </accordion-group>
+                        <accordion-group class="droid-arabic-kufi" heading="ايش نوع السكن الي توفرون له خدمات مغاسل؟
+                        ">
+                        نقدم خدماتنا للجميع ولكن شنطة مغاسل خاصة فقط لأصحاب الشقق                        </accordion-group>
+                        <accordion-group class="droid-arabic-kufi" heading="* هل احتاج اكون في البيت وقت التسليم والاستلام؟
+							
+                        ">
+                        أكيد لا. كل الي عليك انك تعلق شنطة مغاسل على الباب وتطلع تستمتع بيومك    </accordion-group>
+                      
+                        <accordion-group class="droid-arabic-kufi" heading="هل احتاج احسب عدد قطع الملابس قبل احطها في شنطة مغاسل؟
+							
+							
+                        ">لا. احنا نحسبها عنك   </accordion-group>
+                        <accordion-group class="droid-arabic-kufi" heading="متى ترجعون الملابس المغسولة؟
+                        ">
+                        أكيد لا. كل الي عليك انك تعلق شنطة مغاسل على الباب وتطلع تستمتع بيومك    </accordion-group>
+                        <accordion-group class="droid-arabic-kufi" heading="وين تغسلون ملابسنا؟
+							
+							
+                        ">
+                        عندنا شراكة استراتيجية مع مزودين خدمات لتنظيف ملابسكم بأفضل جودة وأفضل مواد  </accordion-group>
+                        <accordion-group class="droid-arabic-kufi" heading="كيف اعرف اسعاركم للغسيل؟
+							
+							
+                        ">
+                        باختصار اسعارنا مثل اسعار السوق. مع ذلك تقدر تشوف الاسعار من خلال صفحة الاسعار في التطبيق.  </accordion-group>
+                        <accordion-group class="droid-arabic-kufi" heading="كيف طريقة الدفع؟
+							
+							
+                        ">
+                        تقدر تدفع من خلال مدى او البطاقات الائتمانية من خلال التطبيق  </accordion-group>
+                        <accordion-group class="droid-arabic-kufi" heading="* كم سعر شنطة مغاسل؟
+							
+							
+							
+                        ">
+                        سعر الشنطة حالياً ب ٣٩ ريال فقط تدفع مرة واحدة مدى الحياة. وراح يتم احتساب سعر الشنطة مع فاتورة أول طلب لك.</accordion-group>
+                        <accordion-group class="droid-arabic-kufi" heading="كم تكلفة التوصيل في تطبيق مغاسل؟
+														
+							
+                        ">
+                        سعر التوصيل ب ٩ ريال ومجاني للطلبات ب ٩٩ ريال وفوق </accordion-group>
+                     
+                    </accordion>        
+                </div>
+            </div>
+            <div *ngIf="show3" class="col-lg-8 col-md-12 mt-5">
+                <div class="faq-accordion accordion ">
+                    <accordion>
+                        <accordion-group class="droid-arabic-kufi"  heading="  ايش هو برنامج شارك واربح؟
+							
+                                 ">
+                                 راح تحصل على ٢٥ ريال في محفظتك اذا عملت مشاركة للتطبيق مع اهلك واصحابك بعد طلبهم الأول. وايضاً الشخص الي شاركته التطبيق راح يحصل على ٢٥ ريال في محفظته تستخدم في الطلب الثاني                        </accordion-group>
+                        <accordion-group class="droid-arabic-kufi" heading="ايش اسوي لو عندي شكوى؟
+                        ">
+                        احنا دائماً موجودين لخدمتك. تقدر تتواصل معانا خلال ٤٨ ساعة من بعد استلام طلبك من خلال قنوات التواصل. وراح نكون سعيدين بخدمتك.     </accordion-group>
+                        
+                     
+                    </accordion>        
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer-style-two></app-footer-style-two>
